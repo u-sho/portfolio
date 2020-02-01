@@ -1,17 +1,24 @@
-<style>
-	h1, figure, p {
+<style lang="scss">
+	%text {
 		text-align: center;
-		margin: 0 auto;
 	}
 
 	h1 {
+		@extend %text;
+
 		font-size: 2.8em;
 		text-transform: uppercase;
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
+
+		@media (min-width: 480px) {
+			font-size: 4em;
+		}
 	}
 
 	figure {
+		@extend %text;
+
 		margin: 0 0 1em 0;
 	}
 
@@ -22,13 +29,9 @@
 	}
 
 	p {
-		margin: 1em auto;
-	}
+		@extend %text;
 
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
+		margin: 1em auto;
 	}
 </style>
 
