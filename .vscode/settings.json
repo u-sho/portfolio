@@ -1,4 +1,9 @@
 {
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"html"
+	],
 	"files.associations": {
 		"*.svelte": "html",
 	},
