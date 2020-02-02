@@ -9,6 +9,7 @@
 	},
 	/* Markdown*/
 	"markdownlint.config": {
+		"no-trailing-spaces": true,   // MD009 default // Trailling spaces
 		"no-multiple-blanks": {       // MD012         // Multiple consective blank lines
 			"maximum": 2
 		},
@@ -19,5 +20,7 @@
 			"lines_below": 1
 		},
 		"single-h1": true,            // MD025 default // Multiple top level headers in the same document
+		"fenced-code-language": true, // MD040 default // Fenced code blocks should have a language specified
+		"first-header-h1": true,      // MD041 default // FIrst line in file should be a top level header
 	},
 }
