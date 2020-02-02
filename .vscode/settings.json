@@ -6,8 +6,15 @@
 	},
 	/* Markdown*/
 	"markdownlint.config": {
-		"MD013": false,
-		"MD014": false,
-		"MD025": true,
+		"MD012": {      // no multiple blanks    // Multiple consective blank lines
+			"maximum": 2
+		},
+		"MD013": false, // line length            // Line lingth
+		"MD014": true,  // commands show output   // Dollar signs used before commands without showing output
+		"MD022": {      // blanks around headings // Headers should be surrounded by blank lines
+			"lines_above": 2,
+			"lines_below": 1
+		},
+		"MD025": true,  // single title (h1)       // Multiple top level headers in the same document
 	},
 }
