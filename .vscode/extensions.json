@@ -5,8 +5,6 @@
 		"EditorConfig.EditorConfig",
 		// commit message
 		"benjaminadk.emojis4git",
-		// github actions
-		"me-dutour-mathieu.vscode-github-actions",
 		// svelte
 		"JamesBirtles.svelte-vscode",
 		"fivethree.vscode-svelte-snippets",
