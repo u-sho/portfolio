@@ -3,7 +3,7 @@ name: Test and Build
 on: [pull_request]
 
 jobs:
-  build:
+  test-build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -19,5 +19,5 @@ jobs:
         run: yarn --frozen-lockfile
       - name: test
         run: yarn test
-      - name: sapper export
+      - name: sapper export static files
         run: yarn export
