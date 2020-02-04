@@ -5,16 +5,12 @@ on: [pull_request]
 jobs:
   test-build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        # LTS and latest
-        node-version: [12.x 13.x]
 
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
-            node-version: ${{ matrix.node }}
+          node-version: '12.x'
       - name: install dependencies
         run: yarn --frozen-lockfile
       - name: test
