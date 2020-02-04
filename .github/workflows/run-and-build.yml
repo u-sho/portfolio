@@ -1,0 +1,24 @@
+name: Test and Build
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # LTS and latest
+        node-version: [12.x 13.x]
+
+    steps:
+      - continue-on-error: true
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+            node-version: ${{ matrix.node }}
+      - name: install dependencies
+        run: yarn --frozen-lockfile
+      - name: test
+        run: yarn test
+      - name: sapper export
+        run: yarn export
