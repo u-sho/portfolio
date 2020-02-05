@@ -1,4 +1,6 @@
 {
+	"css.validate": false,
+	"scss.validate": true,
 	"files.associations": {
 		"*.svelte": "html",
 	},
