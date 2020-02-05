@@ -1,0 +1,13 @@
+{
+	"css.validate": false,
+	"scss.validate": true,
+	"files.associations": {
+		"*.svelte": "html",
+	},
+	/* Markdown*/
+	"markdownlint.config": {
+		"MD013": false,
+		"MD014": false,
+		"MD025": true,
+	},
+}

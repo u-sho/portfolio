@@ -1,0 +1,14 @@
+{
+	"recommendations": [
+		// coding style
+		"DavidAnson.vscode-markdownlint",
+		"EditorConfig.EditorConfig",
+		// commit message
+		"benjaminadk.emojis4git",
+		// svelte
+		"JamesBirtles.svelte-vscode",
+		"fivethree.vscode-svelte-snippets",
+		// scss
+		"sissel.scss-style-tag",
+	]
+}
