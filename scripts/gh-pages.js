@@ -1,9 +1,9 @@
-let ghpages = require('gh-pages');
+var ghpages = require('gh-pages');
 
 ghpages.publish(
 	'__sapper__/export/portfolio',
 	{
-		branch: 'master',
+		branch: 'gh-pagges',
 		repo: 'https://github.com/u-sho/portfolio.git',
 		user: {
 			name: 'u-sho',

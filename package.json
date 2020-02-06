@@ -4,7 +4,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "sapper dev",
-		"export": "sapper export --basepath portfolio --legacy",
+		"export": "sapper export --basepath portfolio",
 		"deploy": "run-p export && node ./scripts/gh-pages.js",
 		"cy:run": "cypress run",
 		"cy:open": "cypress open",
