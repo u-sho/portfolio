@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "sapper dev",
 		"export": "sapper export --basepath portfolio",
-		"deploy": "run-p export && node ./scripts/gh-pages.js",
+		"deploy": "sapper export --basepath portfolio && node ./scripts/gh-pages.js",
 		"cy:run": "cypress run",
 		"cy:open": "cypress open",
 		"test": "run-p --race dev cy:run"
