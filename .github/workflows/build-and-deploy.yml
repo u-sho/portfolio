@@ -1,6 +1,14 @@
-name: Test and Build
+name: Build and Deploy
 
-on: page_build
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - v0.*
+      - v0.*.*
+      - v1.*
+      - v1.*.*
 
 jobs:
   deploy:
@@ -13,4 +21,4 @@ jobs:
       - name: install dependencies
         run: yarn --frozen-lockfile
       - name: deploy
-        run: yarn deploy
+        run: yarn run-s export deploy

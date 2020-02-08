@@ -1,14 +1,15 @@
-let ghpages = require('gh-pages');
+const ghpages = require('gh-pages');
+const version = require('../package.json').version;
 
 ghpages.publish(
-	'__sapper__/export/portfolio',
+	'__sapper__/export',
 	{
-		branch: 'master',
-		repo: 'https://github.com/u-sho/portfolio.git',
+		tag: version,
+		message: 'auto-generated commit by gh-pages package',
 		user: {
 			name: 'u-sho',
 			email: 'shouhei.uechi@gmail.com',
 		}
 	},
 	() => console.log('Deploy complete!')
-)
+);
